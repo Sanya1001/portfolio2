@@ -1,0 +1,57 @@
+/* font-size (headers) -> $head_s:
+font-size (body) -> $body_s: 
+font-style (headers) -> $f_head:
+font-style (body) -> $f_body:
+color 1 -> $c1:
+color 2 -> $c2:
+highlight -> $highlight: */
+
+
+body{
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+#navbar{
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    justify-content: center;
+    width: 100%;
+    border: solid;
+}
+
+#navbar .nav-item{
+    padding: auto;
+    margin: auto auto;
+    justify-content: center;
+    align-items: center;
+}
+
+#title{
+    font-size: 1.5rem;
+}
+
+#main{
+    margin: 1rem 1rem;
+}
+
+.header{
+    font-size: 1.3rem;
+}
+
+#contact{
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    justify-content: center;
+    width: 100%;
+    padding: 1rem;
+}
+
+.c-item{
+    padding: auto;
+    margin: auto auto;
+    justify-content: center;
+    align-items: center;
+}
