@@ -8,8 +8,10 @@ highlight -> $highlight: */
 
 
 body{
-    box-sizing: border-box;
+    box-sizing: content-box;
     justify-content: center;
+    background-color: #defaf4;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 #navbar{
@@ -18,18 +20,25 @@ body{
     align-items: left;
     justify-content: center;
     width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
     border: solid;
+    background-color: #001b6e;
 }
 
 #navbar .nav-item{
-    padding: auto;
-    margin: auto auto;
+    padding: 0.4rem;
+    margin: auto;
     justify-content: center;
     align-items: center;
+    color: #defaf4;
+    font-weight: bold;
 }
 
-#title{
-    font-size: 1.5rem;
+#navbar .nav-item #title{
+    font-size: 2rem;
+    font-family: 'Cookie', cursive;
 }
 
 #main{
@@ -38,6 +47,7 @@ body{
 
 .header{
     font-size: 1.3rem;
+    font-family: 'Lobster', cursive;
 }
 
 #contact{
@@ -47,6 +57,7 @@ body{
     justify-content: center;
     width: 100%;
     padding: 1rem;
+    margin-top: 3rem;
 }
 
 .c-item{
@@ -54,4 +65,24 @@ body{
     margin: auto auto;
     justify-content: center;
     align-items: center;
+}
+
+a{
+    font-size: inherit;
+    font-family: inherit;
+    color: inherit;
+    text-decoration: inherit;
+}
+
+ul{
+    list-style-type: none;
+}
+
+ul li{
+    margin: 0.5rem 0;
+    padding: 1rem;
+}
+
+ul li:hover{
+    background-color: #a5d6d6;
 }
