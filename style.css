@@ -36,6 +36,17 @@ body{
     font-weight: bold;
 }
 
+#navbar .nav-item:hover{
+    padding: 0.4rem;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    background-color: #defaf4;
+    color: #001b6e;
+    font-weight: bold;
+    border-radius: 0.5rem;
+}
+
 #navbar .nav-item #title{
     font-size: 2rem;
     font-family: 'Cookie', cursive;
@@ -72,6 +83,10 @@ a{
     font-family: inherit;
     color: inherit;
     text-decoration: inherit;
+}
+
+a:hover{
+    font-weight: bold;
 }
 
 ul{
