@@ -6,6 +6,9 @@ color 1 -> $c1:
 color 2 -> $c2:
 highlight -> $highlight: */
 
+*{
+    max-width: 100%;
+}
 
 body{
     box-sizing: content-box;
@@ -27,7 +30,7 @@ body{
     background-color: #001b6e;
 }
 
-#navbar .nav-item{
+#navbar .navitem{
     padding: 0.4rem;
     margin: auto;
     justify-content: center;
@@ -36,7 +39,7 @@ body{
     font-weight: bold;
 }
 
-#navbar .nav-item:hover{
+#navbar .navitem:hover{
     padding: 0.4rem;
     margin: auto;
     justify-content: center;
@@ -47,7 +50,7 @@ body{
     border-radius: 0.5rem;
 }
 
-#navbar .nav-item #title{
+#navbar .navitem #title{
     font-size: 2rem;
     font-family: 'Cookie', cursive;
 }
@@ -100,4 +103,60 @@ ul li{
 
 ul li:hover{
     background-color: #a5d6d6;
+}
+
+#nav-btn{
+    position: fixed;
+    top: 0.5rem;
+    right: 2rem;
+    padding: 0.5rem;
+    transition: transform 0.3s ease-in-out;
+    display: none;
+}
+
+#nav{
+    position: fixed;
+    top: 0rem;
+    right: 0rem;
+    background-color: black;
+    height: 100vh;
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(100%);
+    display: none;
+    z-index: 5;
+}
+
+#nav ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#nav ul li{
+    padding: 1rem;
+    overflow: hidden;
+    color: white;
+}
+
+#nav ul li a{
+    text-decoration: inherit;
+    color: inherit;
+}
+
+#nav.active{
+    transform: translateX(0%);
+    display: block;
+}
+
+#nav-btn.active{
+    transform: translateX(-150px);
+}
+
+@media only screen and (max-width: 1000px){
+    #navbar{
+        display: none;
+    }
+    #nav-btn{
+        display: block;
+    }
 }
